@@ -17,12 +17,12 @@ Ricordate: il primo push dovrà essere un file README.md (potete scrivere testo 
 
 A. STEPS JS
 
-1. imposta variabile costoKM = 0.21
-2. imposta variabile numeroKM con tipo output numero
-2a. scrivi output numeroKM in console.log
+1. imposta variabile costoKm = 0.21
+2. imposta variabile numeroKm con tipo output numero
+2a. scrivi output numeroKm in console.log
 3. imposta variabile etaUtente con tipo output numero
 3a. scrivi output etaUtente in console.log
-4. calcola e imposta variabile prezzo (numeroKM * costoKM)
+4. calcola e imposta variabile prezzo (numeroKm * costoKm)
 5. SE etaUtente < 18 calcola prezzo - 20% in forma umana
    altrimenti SE etaUtente > 65 calcola prezzo - 40% in forma umana
 6. Al click sul bottone "Genera" in HTML questo invocherà una  funzione che visualizzerà una sezione HTML con i dettagli del biglietto
@@ -30,7 +30,7 @@ A. STEPS JS
 
 B. STEPS HTML
 ---MILESTONE 1----
-1. Crea campo input per numeroKM
+1. Crea campo input per numeroKm
 2. Crea campo input per etaUtente
 3. Scrivi il prezzo finale
 
