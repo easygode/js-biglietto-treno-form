@@ -1,9 +1,62 @@
 'use strict';
 
+//1. importa e crea variabile inputName
 const inputName = document.querySelector('#name');
+
+//2. importa e crea variabile inputKm
 const inputKm = document.getElementById('km');
+
+//3. importa e crea variabile inputAge
 const inputAge = document.getElementById('age');
+
+//4. importa e crea variabile buttonAge
 const buttonGenerate = document.getElementById('generate');
+
+//5. Crea evento al click per ottenere i valori dgli input e calcolare il prezzo del biglietto
+
+buttonGenerate.addEventListener('click', 
+function() {
+
+    //5.1 crea variabili per i valore degli input
+    const inputNameValue = inputName.value;
+    const inputKmValue = Number(inputKm.value);
+    const inputAgeValue = inputAge.value;
+
+console.log ({inputNameValue, inputKmValue, inputAgeValue});
+    
+    //5.2 crea e assegna variabile ticketPrice
+    let ticketPrice = 0.21 * inputKmValue;
+
+    //5.3 crea condizioni di ticketPrice con sconto
+    if(inputAgeValue === 'underage') {
+        ticketPrice = ticketPrice * 0.8;
+    } else if(inputAgeValue === 'over') {
+        ticketPrice = ticketPrice * 0.6;
+    }
+
+ticketPrice = ticketPrice.toFixed(2);
+
+console.log(ticketPrice);
+}
+)
+
+//const costoKM = 0.21;
+
+//2. imposta variabile numeroKm con tipo output numero
+//let numeroKm = document.getElementById('inputKm').value;
+
+//2a. scrivi output numeroKM in console.log
+//console.log ({numeroKm});
+
+//3. imposta variabile etaUtente con tipo output numero
+//let etaUtente = document.getElementById('eta').value;
+
+//3a. scrivi output etaUtente in console.log
+//console.log (document.getElementById("eta").value);
+
+
+
+
 
 buttonGenerate.addEventListener('click', 
 function() {
