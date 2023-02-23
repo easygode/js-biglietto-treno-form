@@ -11,22 +11,29 @@
 </head>
 <body>
     <main>
-        <div id="container-form">
-            <label for="km">Km da percorrere</label>
-            <input id="inputKm" type="number" placeholder="Km">
-        </div>
-            <label for="eta">Fascia d'età</label>
-            <select id="eta">
-                <option value="under">Minorenne, meno di 18 anni</option>
-                <option value="major">Maggiorenne, tra 18 e 65 anni</option>
-                <option value="silver">Senior, più di 65 anni</option>
-                <option value="audi">Tesla</option>
-              </select>
-            </div>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div>
-            <button onclick="TicketPrice ()">Trova prezzo</button>
+            <label>Nome e Cognome</label>
+            <input type="text" id="name">
+
+            <label>km da percorrere</label>
+            <input type="number" id="km">
+
+            <label>Età</label>
+            <select id="age">
+                <option value="underage">Minorenne, meno di 18 anni</option>
+                <option value="adult">Adulto, tra 18 e 65 anni</option>
+                <option value="over">Senior, più di 65 anni</option>
+                <option value="audi">Tesla</option>
+            </select>
+
+            <button id="generate">Genera</button>
+            <button type="reset">Annulla</button>
         </div>
     </main>
+
+    <!--JavaScript-->
     <script src="js/main.js"></script>
+    <!--/JavaScript-->
 </body>
 </html>
